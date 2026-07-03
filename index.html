@@ -1,75 +1,119 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hundetur</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundetur</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>🐾 Hundetur</h1>
-  <nav>
-    <a href="#hjem">Hjem</a>
-    <a href="#tjenester">Tjenester</a>
-    <a href="#priser">Priser</a>
-    <a href="#booking">Booking</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
+    <h1>🐶 Hundetur</h1>
+
+    <nav>
+        <a href="#hjem">Hjem</a>
+        <a href="#tjenester">Tjenester</a>
+        <a href="#priser">Priser</a>
+        <a href="#booking">Booking</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
 </header>
 
 <section id="hjem">
-  <h2>Trygg og omsorgsfull hundelufting</h2>
-  <p>Vi passer på at hunden din får en fin tur med frisk luft, lek og masse omsorg.</p>
 
-  <button>🐶 Book hundetur</button>
+<div>
+<h2>Trygg og kjærlig hundelufting</h2>
+
+<p>
+Vi passer hunden din med omsorg, trygghet og masse kjærlighet.
+Bestill en tur på få sekunder.
+</p>
+
+<a href="#booking">
+<button>Book nå</button>
+</a>
+
+</div>
+
 </section>
 
 <section id="tjenester">
-  <h2>Våre tjenester</h2>
 
-  <p>🐕 30 minutter – 40 kr</p>
-  <p>🐕 60 minutter – 65 kr</p>
-  <p>🐕 90 minutter – 80 kr</p>
-  <p> 💰 pris kan diskuteres</p>
+<h2>Våre tjenester</h2>
+
+<p>🐕<br><br>30 minutter</p>
+
+<p>🌳<br><br>60 minutter</p>
+
+<p>❤️<br><br>90 minutter</p>
+
+</section>
+
+<section id="priser">
+
+<h2>Priser</h2>
+
+<p>30 minutter – 40 kr</p>
+<p>60 minutter – 65 kr</p>
+<p>90 minutter – 80 kr</p>
+
 </section>
 
 <section id="booking">
 
-</section>
-  <h2>📅 Book hundetur</h2>
+<h2>Book hundetur</h2>
 
-<form action="https://formspree.io/f/mlgyokpa" method="POST">
+<form>
 
-<input type="text" name="navn" placeholder="Navn" required><br><br>
+<input type="text" placeholder="Navn" required>
 
-<input type="email" name="epost" placeholder="E-post" required><br><br>
+<input type="email" placeholder="E-post" required>
 
-<input type="tel" name="telefon" placeholder="Telefonnummer" required><br><br>
+<input type="tel" placeholder="Telefon">
 
-<input type="text" name="hund" placeholder="Hundens navn" required><br><br>
+<input type="text" placeholder="Hundens navn">
 
-<label>📅 Dato:</label><br>
-<input type="date" name="dato" required><br><br>
+<select>
 
-<label>⏰ Tid:</label><br>
-<input type="time" name="tid" required><br><br>
+<option>Velg tur</option>
 
-<label>🐾 Velg tur:</label><br>
-<select name="tur">
-  <option>30 minutter – pris kan diskutere</option>
-  <option>60 minutter – pris kan diksuteres</option>
-  <option>90 minutter – pris kan diskuteres</option>
-  <option> tid og pris kan diskuteres</option>
+<option>30 minutter</option>
+
+<option>60 minutter</option>
+
+<option>90 minutter</option>
+
 </select>
 
-<br><br>
+<input type="date">
 
-<textarea name="melding" placeholder="Ekstra informasjon om hunden"></textarea>
+<textarea placeholder="Skriv en melding..."></textarea>
 
-<br><br>
+<button type="submit">Send booking</button>
 
-<button type="submit">🐶 Send booking</button>
+</form>
 
-</form> 
+</section>
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+<p>📧 hundetur@email.com</p>
+
+<p>📞 999 99 999</p>
+
+<p>📍 Norge</p>
+
+</section>
+
+<footer>
+
+<p>© 2025 Hundetur. Alle rettigheter reservert.</p>
+
+</footer>
+
+</body>
 </html>
