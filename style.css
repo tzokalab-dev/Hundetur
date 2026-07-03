@@ -1,81 +1,167 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8f5ef;
-  color: #4d4036;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-header {
-  background: #d8c3a5;
-  padding: 20px;
-  text-align: center;
+body{
+    font-family:'Inter',sans-serif;
+    background:#f7f8f3;
+    color:#1f3d2b;
+    line-height:1.6;
 }
 
-header h1 {
-  margin: 0;
+header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    z-index:1000;
 }
 
-nav {
-  margin-top: 10px;
+header h1{
+    font-size:34px;
+    color:#285c34;
 }
 
-nav a {
-  text-decoration: none;
-  color: #4d4036;
-  margin: 0 10px;
-  font-weight: bold;
+nav a{
+    color:#24452c;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:.3s;
 }
 
-section {
-  padding: 40px 20px;
-  text-align: center;
+nav a:hover{
+    color:#4caf50;
 }
 
-button {
-  background: #a8c3a0;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
+section{
+    padding:80px 8%;
 }
 
-button:hover {
-  background: #8cab84;
+#hjem{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55)),
+    url("https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1600") center/cover;
 }
 
-input {
-  width: 90%;
-  max-width: 350px;
-  padding: 12px;
-  border: 1px solid #d8c3a5;
-  border-radius: 10px;
-  margin-bottom: 10px;
+#hjem h2{
+    font-size:64px;
+    max-width:600px;
+    line-height:1.1;
+    margin-bottom:25px;
 }
 
-#priser p,
-#tjenester p {
-  font-size: 18px;
-ul {
-  list-style: none;
-  padding: 0;
+#hjem p{
+    font-size:22px;
+    max-width:550px;
+    margin-bottom:35px;
 }
 
-li {
-  font-size: 20px;
-  margin: 12px 0;
+button{
+    background:#2e6a39;
+    color:white;
+    border:none;
+    padding:16px 35px;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(46,106,57,.25);
 }
 
+button:hover{
+    transform:translateY(-3px);
+    background:#24572f;
+}
+
+#tjenester{
+    text-align:center;
+}
+
+#tjenester h2,
+#booking h2{
+    font-size:48px;
+    margin-bottom:50px;
+}
+
+#tjenester p{
+    background:white;
+    display:inline-block;
+    width:240px;
+    margin:15px;
+    padding:40px 20px;
+    border-radius:25px;
+    font-size:28px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+#tjenester p:hover{
+    transform:translateY(-10px);
+}
+
+form{
+    background:white;
+    max-width:850px;
+    margin:auto;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+input,
 select,
-textarea {
-  width: 90%;
-  max-width: 350px;
-  padding: 12px;
-  border: 1px solid #d8c3a5;
-  border-radius: 10px;
+textarea{
+    width:100%;
+    padding:16px;
+    margin:10px 0 20px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:16px;
 }
 
-textarea {
-  height: 100px;
+textarea{
+    height:130px;
+}
+
+footer{
+    background:#285c34;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:80px;
+}
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+#hjem{
+    text-align:center;
+}
+
+#hjem h2{
+    font-size:42px;
+}
+
+#tjenester p{
+    width:100%;
+}
 }
